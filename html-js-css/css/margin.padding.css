@@ -1,0 +1,65 @@
+* {
+  /** universal secici */
+  /** tüm html elemanlarının margin ve padding lerini sıfırla*/
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aquamarine;
+  /* Ana div e her yonden 10px dış uzaklık verdik */
+  margin: 10px;
+  /* ana div in iç hacminei her yönden 20px genişlettik */
+  padding: 20px;
+  /* text-align: center; */
+  /* bir blok element içerisinde inline elementler var ise bunlar text-align ile hizalanabilir. Blok element içerisindeki blok elementler text-align ile hizalanamaz. */
+}
+.div {
+  background-color: antiquewhite;
+  /* margin-bottom: 10px */
+  /* margin-top:10px */
+
+  /* width: 50% */
+  width: 100px;
+
+  text-align: center;
+
+  margin: 20px auto;
+  padding: 20px;
+  border: 10px solid rebeccapurple;
+}
+hr {
+  margin: 30px 10px;
+}
+
+.nav {
+  text-align: center;
+}
+
+/* ? Inline element içerik kadar yer kaplarlar. Bu sebepten dolayı margin ve padding top veya button değerlerini almazlar. Bu özellikleri kullanmak için elementler display property si ile inline-block haline getirilebilir */
+.nav li {
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+  margin-top: 20px;
+  /* padding-top: 20px; */
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+h2 {
+  margin-top: 20px;
+}
+h2:hover{
+    opacity:0,5;
+    cursor: pointer;
+}
+.nav :hover {
+  cursor: pointer;
+  background-color: rgb(226 131 8);
+  color: aliceblue;
+  font-size: 700;
+}

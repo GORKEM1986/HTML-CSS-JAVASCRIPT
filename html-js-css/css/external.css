@@ -1,0 +1,30 @@
+/* body{ */
+/* background-color: antiquewhite; */
+/* } */
+/* override-- ezme*/
+
+* {
+  background-color: antiquewhite;
+}
+h1 {
+  color: red;
+}
+h1:hover {
+  /** saydamlık katsayısı */
+  opacity: 0, 5;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+  color: blueviolet;
+}
+/** her bir li'nin üzerine fare ile gelindiğinde çalışan kod*/
+li:hover {
+  color: purple;
+  font-weight: 800;
+  /** Cursor el şeklinde gözüksün*/
+  cursor: pointer;
+}
+.list {
+  border: 1px solid red;
+}
