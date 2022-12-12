@@ -1,0 +1,1 @@
+console.log('bu index-2.js dosyasıdır');
