@@ -38,3 +38,18 @@ console.log(s1 - s3); //? NaN (Not a Number)
 
 const difference = s1 - s3;
 console.log(difference, typeof NaN); //? NaN ın data type ı number'dır
+
+//* Bir islemin sonucunun NaN olup olmadıgını anlamak icin isNaN() fonksiyonu kullanılabilir.
+console.log(isNaN(difference)); //? true
+
+//? Ornek
+//?---------------------
+const yearOfBirth = 1920;
+const name = "John";
+console.log(name + " is " + (2022 - yearOfBirth) + " years old");
+console.log(
+  name + " is " + (new Date().getFullYear() - yearOfBirth) + " years old"
+);
+
+// const date = new Date()
+// console.log(date);
