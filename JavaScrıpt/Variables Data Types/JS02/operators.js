@@ -121,7 +121,6 @@ years old`);
 // b *= 3 //? b = b * 3
 // console.log({ b });
 
-
 // //* MOD
 // //* -----------------------------------
 
@@ -132,13 +131,9 @@ years old`);
 
 // console.log(`Hundreds: ${hundreds}, Tens: ${tens}, Ones: ${ones} `);
 
-
-
-
 // * =======================================
 // *          KARŞILASTIRMA OPERATORLERI
 // * =======================================
-
 
 // const num1 = 3
 
@@ -146,12 +141,10 @@ years old`);
 // console.log(num1 === 3);  //* true
 // console.log(num1 === "3");  //* false
 
-
 // const num2 = "3"
 
 // console.log(num1 == num2);
 // console.log(num1 != num2);
-
 
 // const num3 = 5
 // const num4 = "1"
@@ -161,13 +154,12 @@ years old`);
 
 // console.log(num2 > num4)
 
-
 // //*===================================
 // //* MANTIKSAL OPERATORLER
 // //*===================================
 
-const v1 = true
-const v2 = false
+const v1 = true;
+const v2 = false;
 
 console.log(v1 && v2);
 console.log(v1 || v2);
@@ -181,45 +173,55 @@ console.log(!v1);
 
 // console.log(age, healty)
 
-
-
 // if( age>=18 && healty== true){
 //   console.log("Ehliyet alabilir")
 // }else{
 //   console.log("Ehliyet alamaz")
 // }
 
-
 //? Javascripte surekli falsy olan 6 deger bulunmaktadir.
-const nal = null
-const tanimsiz = undefined
-const bos = ""
-const sayiDegil = NaN
-const sifir = 0
-const falsy = false
+const nal = null;
+const tanimsiz = undefined;
+const bos = "";
+const sayiDegil = NaN;
+const sifir = 0;
+const falsy = false;
 
-console.log(Boolean(0))
-console.log(Boolean(5))
-console.log(Boolean(-5))
-console.log(Boolean(12.4))
+console.log(Boolean(0));
+console.log(Boolean(5));
+console.log(Boolean(-5));
+console.log(Boolean(12.4));
 
-
-console.log(v1 && null && true && true) //?false
+console.log(v1 && null && true && true); //?false
 console.log(v1 && 4 && true && 5); //? 5
-console.log(0 && v1);//* 0
+console.log(0 && v1); //* 0
 console.log(v1 || 0); //* true
 
-const num5 = 0
+const num5 = 0;
 if (num5 === true) {
-  console.log("sayı sıfır değildir")
+  console.log("sayı sıfır değildir");
 } else {
-  console.log("sayı sıfırdır")
+  console.log("sayı sıfırdır");
 }
-
 
 //* ==============================
 //*   TIP DONUSUMLERI
 //*  =============================
 
+const dolar = "1000";
+const tl = "500";
 
+const totalMoney = Number(dolar) + Number(tl);
+const totalMoney1 = +dolar + +tl;
+const totalMoney2 = parseInt(dolar) + parseInt(tl);
+const totalMoney3 = parseFloat(dolar) + parseFloat(tl);
+console.log(totalMoney3);
 
+console.log(Number(null)); //? 0
+console.log(Number("")); //? 0
+console.log(Number("12.3")); //? 12.3
+console.log(Number("1ab")); //? NaN
+console.log(Number("0b101")); //? (binary sayı sistemi)
+console.log(Number("0x10")); //? 16  (hex sayı sistemi)
+
+console.log(String(55));
