@@ -90,3 +90,51 @@ switch (islem) {
     break
 }
 console.log(`${s1} ${islem} ${s2} = ${sonuc}`)
+
+//! ODEV2
+//! Clarusway’deki haftalik ders ve etkinlik programinizi,
+//! console’dan girilen gun degerine gore cikti veren kodu
+//! switch-case yapisi ile yaziniz.
+
+//! Program
+//! Pazartesi, Sali ,Çarsamba, Persembe -> InClass
+//! Cuma -> Teamwork
+//! Cumartesi ->  InClass + Workshop
+//! Pazar -> Self-Study
+//! Aksi takdirde -> Yanlis gun girildi.
+
+
+
+//**************** TERNARY *******************
+
+//? ORNEK5: Kaldi-Gecti
+
+const grade = +prompt("Please enter your grade:?")
+const result =
+  grade >= 50
+    ? `You are succesful with ${grade}`
+    : `You are failed with ${grade}`
+
+console.log(result)
+
+const gender = "male"
+const age = 20
+const healty = true
+const status = "teacher"
+
+age >= 18 && gender === "male" && healty === true && status !== "student"
+  ? alert("military service is required")
+  : alert("military service is not required")
+
+//! ODEV3:Maasi asgari ucretten az olanlara %50 zam,
+//! fazla olanlara ise %10 zam yapmak istiyoruz.
+
+//* let salary = 5000;
+//* salary = salary * 1.5
+
+//! ODEV4: Console’dan kisininin gelir ve gider miktarini alan
+//! eger kisinin geliri giderinden en az asgari ucret kadar fazla ise
+//! Kredi Verilebilir 🤑 , değilse  Kredi Verilemez 🥺
+//! seklinde cikti veren kodu Ternary deyimi kullanarak yaziniz.
+
+
