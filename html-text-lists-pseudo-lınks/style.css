@@ -59,5 +59,40 @@ p.text-style {
 
 p.text-style .elit {
   color: red;
-  text-decoration: line-through;
+  text-decoration: line-through; /** ust cizgili*/
+  text-decoration: overline; /** uzeri cizgili*/
+  text-decoration: underline; /** alti cizgili*/
+  text-decoration: none; /** cizgi yok*/
+}
+
+div.transformation p {
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  text-transform: capitalize; /*? ilk hafler buyuk*/
+  text-transform: lowercase; /*? tamami kucuk harf*/
+  text-transform: uppercase; /*? tamami buyuk harf*/
+  text-transform: none; /*? transform yok*/
+}
+
+div.transformation p.indent {
+  text-indent: 20px;
+}
+
+.spacing {
+  line-height: 1.5;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  direction: rtl;
+}
+
+.shadow {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  background-color: antiquewhite;
+  box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.shadow h2 {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
 }
