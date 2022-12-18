@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+.languages {
+  list-style-type: circle;
+  list-style-position: inside;
+  list-style-image: linear-gradient(to left bottom, red, blue);
+}
+
+.awesome {
+  color: red;
+  font-size: 1rem;
+}
+
+ul.pseudo li {
+  list-style-type: none;
+  background-color: aliceblue;
+  border: 1px solid grey;
+  width: 10rem;
+}
+
+ul.pseudo li:nth-child(even) {
+  background-color: green;
+  color: white;
+}
+
+ul.pseudo li:last-child {
+  background-color: rgb(225, 133, 13);
+  color: white;
+}
+
+ul.pseudo li:nth-child(4) {
+  background-color: purple;
+  color: white;
+}
+
+/* ul.pseudo li:nth-child(odd) {
+  background-color: grey;
+  color: white;
+} */
+
+ul.pseudo li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+ul.pseudo li:active {
+  font-weight: 900;
+}
+
+ul.pseudo li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+ul.pseudo li:hover {
+  font-size: 900;
+}
+
+ul.pseudo li::before {
+  content: "❤️";
+}
+
+ul.pseudo li::after {
+  content: "💲";
+}
+
+ul.pseudo li:nth-child(3)::before {
+  content: "🥳";
+}
+
+ul.pseudo li:last-child::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f81d";
+}
+
+.ps-elements::first-line {
+  font-weight: 900;
+}
+
+.ps-elements::first-letter {
+  font-size: 200%;
+}
