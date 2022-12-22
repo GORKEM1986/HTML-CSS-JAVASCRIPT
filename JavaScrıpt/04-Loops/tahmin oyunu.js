@@ -8,9 +8,7 @@ let count = 0;
 do {
   count++;
   trying++;
-  enterNumber = +prompt(
-    `(0-100) olan sayıyı tahmin etmeniz isteniyor. ${count}. deneme:`
-  );
+  enterNumber = +prompt(`(0-100) olan sayıyı tahmin etmeniz isteniyor. ${count}. deneme:`);
   if (enterNumber < 0 || enterNumber > 100) {
     alert(`Lütfen 0-100 arasında bir sayı giriniz.`);
   } else {
