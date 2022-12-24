@@ -48,3 +48,9 @@ Carpımları: ${mul},
 Enbuyuk sayı: ${enBuyuk}, 
 Enkucuksayı: ${enKucuk}`)
 
+
+
+/** ONR3 */
+
+
+
