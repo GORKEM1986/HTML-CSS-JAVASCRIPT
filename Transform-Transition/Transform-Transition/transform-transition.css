@@ -4,3 +4,41 @@
     margin:2rem auto;
     width: 50vw;
 }
+
+
+
+
+/*  *********** TRANSFORM **********  */
+
+
+.yazi1{
+    background-color: chocolate;
+    transform: rotateX(180deg);
+}
+
+.yazi2{
+    background-color: crimson;
+    transform: rotateY(180deg);
+}
+
+img{
+    transform: rotateY(180deg);
+}
+
+
+.yazi4{
+    background-color: rgb(198, 30, 210);
+    transform: scaleX(1.9);
+}
+.yazi5{
+    background-color: rgb(210, 183, 30);
+    transform: scaleY(1.9);
+}
+.yazi6{
+    background-color: rgb(30, 210, 204);
+    transform: scale(1.9);
+}
+.yazi6:hover{
+    background-color: rgb(210, 171, 30);
+    transform: scale(1.3);
+}
