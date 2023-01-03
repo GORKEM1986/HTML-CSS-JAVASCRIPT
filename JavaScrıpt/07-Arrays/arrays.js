@@ -8,40 +8,35 @@ console.log("***** ARRAYS ******");
 //*-----------------------------------------------
 
 //! 1.Yontem (Array Literal) Tercih edilen yontem
-const names = ["emir", "oğuzhan","levent", "tarik" ]
+const names = ["emir", "oğuzhan", "levent", "tarik"];
 
 console.log(names);
-console.log(names.length);  //? 4 (names dizisinin lenght property sine erisiyoruz)
+console.log(names.length); //? 4 (names dizisinin lenght property sine erisiyoruz)
 
-
-const x = 5.234986 //? primitive
+const x = 5.234986; //? primitive
 console.log(x.toFixed(2));
 console.log(typeof names);
 
-
-const emptArr =[]
+const emptArr = [];
 console.log(emptArr);
 
-// //! 2.Yontem (Object Constructor) 
+// //! 2.Yontem (Object Constructor)
 
-const codingLangs = new Array("C", "C++", "JS", "Go")
+const codingLangs = new Array("C", "C++", "JS", "Go");
 console.log(codingLangs);
 
-const numbers = new Array(3,2,1)
+const numbers = new Array(3, 2, 1);
 console.log(numbers);
 
-const numbers1 = new Array(10)
+const numbers1 = new Array(10);
 console.log(numbers1);
 
-
 // ! 3.Yöntem (Array.of())
-const number2 = Array.of(1, 2, 3)
-console.log(number2) //?(3) [1, 2, 3]
+const number2 = Array.of(1, 2, 3);
+console.log(number2); //?(3) [1, 2, 3]
 
-const numbers3 = Array.of(5)
-console.log(numbers3) //? [5]
-
-
+const numbers3 = Array.of(5);
+console.log(numbers3); //? [5]
 
 // //* Diziden Veri Okuma-Yazma (indisleme)
 // //* ----------------------------------------------
@@ -52,28 +47,32 @@ console.log(numbers3) //? [5]
 //? kadar devam eder.
 //? Syntax => diziAdi[indis]
 
-
-const names1 = ["emir", "oğuzhan","levent", "tarik", "Sabata", "Mehtap", "Rose"]
+const names1 = [
+  "emir",
+  "oğuzhan",
+  "levent",
+  "tarik",
+  "Sabata",
+  "Mehtap",
+  "Rose",
+];
 console.log(names1[1]); //? oğuzhan
-const tarik = names1[3]
+const tarik = names1[3];
 console.log(tarik); //? tarik
 
 console.log(names1[5]);
-const lastE1 = names1[names1.length - 1]
+const lastE1 = names1[names1.length - 1];
 console.log(lastE1);
-
 
 //? Alternatif olarak at()  metodu
 console.log(names1.at(-3));
 
-
 // //!  Diziye veri yazma
 
-names1[2] = "Levent"
+names1[2] = "Levent";
 
 // names1[2]=(names1[2].toUpperCase());
-console.log(names1)
-
+console.log(names1);
 
 // const names = ["ismet", "canan"] //! Identifier 'names' has already been declared
 
@@ -89,24 +88,29 @@ console.log(names1)
 
 // //? Diziler farklı veri tiplerini bir arada saklayabilir.
 
-const ageArr = [22,44,55]
-const people = ["John", "Varmont",new Date().getFullYear() - 1990,true,ageArr,]
+const ageArr = [22, 44, 55];
+const people = [
+  "John",
+  "Varmont",
+  new Date().getFullYear() - 1990,
+  true,
+  ageArr,
+];
 console.log(people);
 console.log(people[4]);
 console.log(++people[4][1]);
 console.log(people);
 console.log(ageArr);
-ageArr[0]--
+ageArr[0]--;
 
 console.log(people);
-
 
 // //?================================================
 // //?  DIZIYI DEGISTIREN (MUTATOR) METOTLAR
 // //?================================================
 
 // //** pop() son elemani siler ve sildigi elemani dondurur.
-// const cars = ["BMW", "Mercedes", "Fiat", "Anadol"]
+const cars = ["BMW", "Mercedes", "Fiat", "Anadol"];
 // console.log(cars.pop())
 // console.log(cars)
 
@@ -126,6 +130,40 @@ console.log(people);
 // console.log(cars.shift())
 // console.log(cars)
 
+//* splice()
+//? 1.parametre: eklenecek indis numarasi
+//? 2.parametre: 0 ise araya ekleme, 1 ise uzerine yazma
+//? 3.parametre: yeni eklenecek veri
+
+cars.splice(1, 0, "VW");
+console.log(cars); //?(5) ['BMW', 'VW', 'Mercedes', 'Fiat', 'Lexus']
+
+cars.splice(3, 1, "Maseratti");
+console.log(cars);
+
+//* Dizinin tamamini ters siraya cevirir.
+cars.reverse();
+console.log(cars);
+
+//*sort() Diziyi alfabetik olarak siralar.
+//! Alfabetik siraladigi icin dogru sonuc cikmayabilir.
+
+cars.sort(); //? text'leri mantikli bir sekilde siralar
+console.log(cars);
+
+const numbers4 = [2, 3, 22, 1, 5, 7, 6];
+numbers4.sort(); //? Siralama yanlis cikabilir.
+console.log(numbers4);
+
+//* sort metodu diziyi iterasyona ugratir ve parametre olark aldigi arrow
+//* fonksiyonunu dizinin her bir elemanina uygular. Bu sayede kucuk sayilar
+//* ile buyuk sayilari yer degistirerek siralama islemini gerceklestirir.
+
+numbers4.sort((a, b) => a - b);
+console.log(numbers4); //?(7) [1, 2, 3, 5, 6, 7, 22]
+
+numbers4.sort((a, b) => b - a);
+console.log(numbers4); //?(7) [22, 7, 6, 5, 3, 2, 1]
 
 // //?================================================
 // //?             DIZI ERISIM METOTLARI
