@@ -11,17 +11,17 @@
 //2- Belirli bir string ifadenin tersini bulan fonksiyonu yazınız?
 // console.log(reverseString('hello world')) // output: dlrow olleh
 
-let str = "Selamun Aleykum";
+// let str = "Selamun Aleykum";
 
-function reverseString(str) {
-  let str2 = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    str2 += str[i];
-  }
-  return str2;
-}
+// function reverseString(str) {
+//   let str2 = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     str2 += str[i];
+//   }
+//   return str2;
+// }
 
-console.log(reverseString("hello world"));
+// console.log(reverseString("hello world"));
 
 // 3- Belirli bir string ifadenin palindrome olup olmadığını bulan fonksiyonu yazınız?(Büyük , küçük harf duyarlılığı olmamalıdır.)
 // const string = 'selles'
