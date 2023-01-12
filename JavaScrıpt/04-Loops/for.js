@@ -4,7 +4,7 @@
 
 // console.log(" **** FOR ****")
 
-// //? Ornek : 1 den n kadar sayıları toplayan kodu yazınız.
+ek : 1 den n// //? Orn kadar sayıları toplayan kodu yazınız.
 
 // const n =Number(prompt("Enter a number"));
 
